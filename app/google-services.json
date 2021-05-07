@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "18953759240",
+    "project_id": "ictonapp",
+    "storage_bucket": "ictonapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18953759240:android:e3ca31393a769051f2bfbd",
+        "android_client_info": {
+          "package_name": "ru.hypnex.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18953759240-ebgvq4lvje7j541u8vu281s2r8u70n4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHA-VOR-lOjpk6D1VYcw1VeZwVFhUBXH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18953759240-ebgvq4lvje7j541u8vu281s2r8u70n4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
