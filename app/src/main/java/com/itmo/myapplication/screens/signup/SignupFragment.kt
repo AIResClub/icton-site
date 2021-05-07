@@ -14,8 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.itmo.myapplication.R
 import com.itmo.myapplication.util.toast
 
-
-class SignupFragment(val auth: FirebaseAuth) : Fragment(R.layout.signup_fragment) {
+class SignupFragment(private val auth: FirebaseAuth) : Fragment(R.layout.signup_fragment) {
 
     private lateinit var signupViewModel: SignupViewModel
 
