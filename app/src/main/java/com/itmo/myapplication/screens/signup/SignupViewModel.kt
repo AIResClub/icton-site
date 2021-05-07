@@ -27,7 +27,7 @@ class SignupViewModel(application: Application) : AndroidViewModel(application) 
 
             isSuccess.value = it.isSuccessful
 
-            Log.d(TAG, "${it.isSuccessful}")
+            Log.d(TAG, "${it.result}")
         }
     }
 
