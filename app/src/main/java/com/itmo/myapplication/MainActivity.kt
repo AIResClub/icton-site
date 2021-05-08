@@ -7,6 +7,8 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.itmo.myapplication.screens.signup.SignupFragment
+import com.itmo.myapplication.screens.contacts.ContactsFragment
+import com.itmo.myapplication.util.toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,14 +31,19 @@ class MainActivity : AppCompatActivity() {
                     .replace(R.id.fragmentContainer, SignupFragment(auth))
                     .commit()
             } else {
-                val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
+                val bottomNavigationView: BottomNavigationView =
+                    findViewById(R.id.bottomNavigationView)
 
                 bottomNavigationView.setOnNavigationItemReselectedListener { item ->
-                    when(item.itemId) {
+                    when (item.itemId) {
                         R.id.news -> null
                         R.id.forStudent -> null
                         R.id.askIct -> null
-                        R.id.contacts -> null
+                        R.id.contacts -> {
+                            supportFragmentManager.beginTransaction()
+                                .replace(R.id.fragmentContainer, ContactsFragment())
+                                .commit()
+                        }
                     }
                 }
             }
